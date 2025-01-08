@@ -1,8 +1,7 @@
 import React from "react";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
 import DarkMode from "./DarkMode";
 
-const NavBar = () => {
+const NavBar = ({ theme, setTheme }) => {
   return (
     <div className="shadow-md dark:bg-gray-900 dark:text-white">
       <div className="container flex justify-between items-center py-3 dark:">
@@ -35,7 +34,7 @@ const NavBar = () => {
             BOOKING
           </a>
           <div>
-            <DarkMode />
+            <DarkMode theme={theme} setTheme={setTheme} />
           </div>
         </div>
       </div>
