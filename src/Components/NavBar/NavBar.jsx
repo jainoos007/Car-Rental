@@ -4,7 +4,7 @@ import DarkMode from "./DarkMode";
 const NavBar = ({ theme, setTheme }) => {
   return (
     <div className="shadow-md dark:bg-gray-900 dark:text-white">
-      <div className="container flex justify-between items-center py-3 dark:">
+      <div className="container w-full flex justify-between items-center py-3 dark:">
         <div>
           <p className=" font-serif font-bold text-3xl">Car Rental</p>
         </div>

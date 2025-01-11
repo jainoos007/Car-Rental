@@ -18,7 +18,7 @@ const Hero = ({ theme }) => {
               beatae nam similique nobis praesentium.
             </p>
             <div>
-              <button className="bg-primary/80 px-4 py-1 rounded-md">
+              <button className="bg-primary/70 px-5 py-2 rounded-md hover:bg-primary/80">
                 Get Started
               </button>
             </div>
