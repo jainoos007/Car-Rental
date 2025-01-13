@@ -3,7 +3,7 @@ import bannerCar from "../../assets/car1.png";
 
 const About = () => {
   return (
-    <div className="max-h-[620px] bg-gray-300 dark:bg-gray-950 dark:text-white">
+    <div className="max-h-[620px] bg-gray-300 dark:bg-gray-900 dark:text-white">
       <div className="container grid grid-cols-2 py-32">
         {/* image section */}
         <div className="relative ml-20">

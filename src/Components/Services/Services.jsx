@@ -29,7 +29,7 @@ const cardItems = [
 
 const Services = () => {
   return (
-    <div>
+    <div className="dark:bg-black">
       <div className="container text-center py-16">
         <h1 className="font-bold font-serif text-4xl">Why Choose Us</h1>
         {/* cards */}
@@ -37,7 +37,7 @@ const Services = () => {
           {cardItems.map((item) => (
             <div
               key={item.id}
-              className="group bg-black flex flex-col px-10 gap-5 py-12 items-center rounded-md hover:bg-primary hover:text-black duration-300"
+              className="dark:bg-gray-900 group bg-black flex flex-col px-10 gap-5 py-12 items-center rounded-md hover:bg-primary dark:hover:bg-primary  hover:text-black duration-300"
             >
               <div className="text-primary group-hover:text-black text-6xl ">
                 {item.icon}
