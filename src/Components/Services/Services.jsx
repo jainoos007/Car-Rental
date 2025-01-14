@@ -29,11 +29,11 @@ const cardItems = [
 
 const Services = () => {
   return (
-    <div className="dark:bg-black">
-      <div className="container text-center py-16">
+    <div className="dark:bg-black dark:text-white">
+      <div className="container text-center py-14">
         <h1 className="font-bold font-serif text-4xl">Why Choose Us</h1>
         {/* cards */}
-        <div className="grid grid-cols-3 gap-5 py-16 text-white ">
+        <div className="grid grid-cols-3 gap-5 py-10 text-white ">
           {cardItems.map((item) => (
             <div
               key={item.id}
