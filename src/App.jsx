@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import Cards from "./Components/Cards/Cards";
 import Testimonial from "./Components/Testimonial/Testimonial";
+import Banner from "./Components/Banner/Banner";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -23,13 +24,14 @@ function App() {
     }
   }, [theme]);
   return (
-    <div>
+    <div className="dark:bg-black ">
       <NavBar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
       <About />
       <Services />
       <Cards />
       <Testimonial />
+      <Banner />
     </div>
   );
 }
