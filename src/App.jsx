@@ -6,6 +6,7 @@ import Services from "./Components/Services/Services";
 import Cards from "./Components/Cards/Cards";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Banner from "./Components/Banner/Banner";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -32,6 +33,7 @@ function App() {
       <Cards />
       <Testimonial />
       <Banner />
+      <Contact />
     </div>
   );
 }
