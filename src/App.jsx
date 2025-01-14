@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import Cards from "./Components/Cards/Cards";
+import Testimonial from "./Components/Testimonial/Testimonial";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Services />
       <Cards />
+      <Testimonial />
     </div>
   );
 }
