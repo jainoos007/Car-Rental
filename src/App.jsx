@@ -7,6 +7,7 @@ import Cards from "./Components/Cards/Cards";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Banner from "./Components/Banner/Banner";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -34,6 +35,7 @@ function App() {
       <Testimonial />
       <Banner />
       <Contact />
+      <Footer />
     </div>
   );
 }
