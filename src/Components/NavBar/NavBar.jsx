@@ -8,7 +8,7 @@ const NavBar = ({ theme, setTheme }) => {
         <div>
           <p className=" font-serif font-bold text-3xl">Car Rental</p>
         </div>
-        <div className="flex gap-5">
+        <div className="gap-5 flex">
           <a
             href="#/Home"
             className="font-semibold text-lg hover:text-primary hover:underline-offset-8 hover:underline transition-all duration-400"
