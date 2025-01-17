@@ -8,6 +8,7 @@ const cardItems = [
     id: 1,
     icon: <FaCameraRetro />,
     text: "Best Price",
+    delay: "100",
     detail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quos. Learn More...",
   },
@@ -15,6 +16,7 @@ const cardItems = [
     id: 2,
     icon: <FaShippingFast />,
     text: "Fast and Safe",
+    delay: "300",
     detail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quos. Learn More...",
   },
@@ -22,6 +24,7 @@ const cardItems = [
     id: 3,
     icon: <GiNotebook />,
     text: "Experience Drivers",
+    delay: "500",
     detail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quos. Learn More...",
   },
@@ -36,6 +39,9 @@ const Services = () => {
         <div className="grid grid-cols-3 gap-5 py-10 text-white ">
           {cardItems.map((item) => (
             <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={item.delay}
               key={item.id}
               className="dark:bg-gray-900 group bg-black flex flex-col px-10 gap-5 py-12 items-center rounded-md hover:bg-primary dark:hover:bg-primary  hover:text-black duration-300"
             >
