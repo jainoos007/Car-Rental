@@ -8,6 +8,7 @@ const carItems = [
     id: 1,
     img: car1,
     name: "BMW UX",
+    delay: "100",
     price: "$100/Day",
     detail: "Details",
     distance: "12Km",
@@ -16,6 +17,7 @@ const carItems = [
     id: 2,
     img: car2,
     name: "KIA UX",
+    delay: "300",
     price: "$140/Day",
     detail: "Details",
     distance: "12Km",
@@ -24,6 +26,7 @@ const carItems = [
     id: 3,
     img: car3,
     name: "BMW UX",
+    delay: "500",
     price: "$100/Day",
     detail: "Details",
     distance: "12Km",
@@ -34,12 +37,23 @@ const Cards = () => {
   return (
     <div className="dark:bg-gray-900 dark:text-white py-10">
       <div className="container space-y-6">
-        <h1 className="text-4xl font-bold font-serif ">Lorem ipsum dolor.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-4xl font-bold font-serif "
+        >
+          Lorem ipsum dolor.
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
         {/* Cards */}
         <div className="grid grid-cols-3 gap-16">
           {carItems.map((item) => (
             <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={item.delay}
               key={item.id}
               className="group flex flex-col border-2 rounded-xl py-4 px-3 justify-between relative hover:border-primary duration-300 mt-4 mb-4"
             >
@@ -60,7 +74,11 @@ const Cards = () => {
           ))}
         </div>
         {/* Button */}
-        <div className="text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-center"
+        >
           <button className="border-2 border-primary rounded-md text-primary px-6 py-2 hover:bg-primary/90 hover:text-black">
             Get Started
           </button>
