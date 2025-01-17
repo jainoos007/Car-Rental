@@ -9,22 +9,44 @@ const Hero = ({ theme }) => {
         <div className="grid place-items-center grid-cols-2">
           {/*text area  */}
           <div className="flex flex-col gap-5 justify-center sm:pr-32 lg:pr-10">
-            <p className="text-primary font-semibold font-serif text-xl">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="100"
+              className="text-primary font-semibold font-serif text-xl"
+            >
               Effortless
             </p>
-            <h1 className="font-serif font-bold text-6xl">Car Rental</h1>
-            <p>
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+              className="font-serif font-bold text-6xl"
+            >
+              Car Rental
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam a
               beatae nam similique nobis praesentium.
             </p>
             <div>
-              <button className="bg-primary/70 px-5 py-2 rounded-md hover:bg-primary/80">
+              <button
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="400"
+                className="bg-primary/70 px-5 py-2 rounded-md hover:bg-primary/80"
+              >
                 Get Started
               </button>
             </div>
           </div>
           {/* image area */}
-          <div className="relative">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="2500"
+            data-aos-once="true"
+            className="relative"
+          >
             <img
               src={theme === "dark" ? blackCar : yellowCar}
               className="relative scale-120 max-h-[600px]"

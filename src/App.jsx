@@ -8,8 +8,20 @@ import Testimonial from "./Components/Testimonial/Testimonial";
 import Banner from "./Components/Banner/Banner";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: "ease-in-shine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
