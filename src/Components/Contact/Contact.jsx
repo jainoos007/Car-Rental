@@ -4,10 +4,14 @@ const Contact = () => {
   return (
     <div>
       <div className="container">
-        <div className=" grid grid-cols-10 bg-gray-900 mt-32 py-10 px-8">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className=" grid grid-cols-10 bg-gray-900 mt-32 py-10 px-8"
+        >
           <div className="col-span-6 space-y-5">
             <h1 className="text-white font-bold text-5xl">
-              Let's collaborate on your upcoming car rental venture
+              Let's collaborate on your upcoming car rental ventures
             </h1>
             <p className="text-gray-500">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
