@@ -32,22 +32,22 @@ const Testimonial = () => {
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="font-serif font-bold text-4xl"
+          className="font-serif font-bold text-center text-3xl sm:text-4xl"
         >
           What Our Clients Say About Us
         </h1>
-        <p data-aos="fade-up" data-aos-duration="1000">
+        <p data-aos="fade-up" data-aos-duration="1000" className="text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>
         {/* Testimonial Cards */}
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid sm:grid-cols-3 gap-7">
           {cartItems.map((item) => (
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={item.delay}
               key={item.id}
-              className="bg-gray-200 dark:bg-gray-900 px-5 py-10 flex flex-col gap-10 text-center rounded-md mt-7"
+              className="bg-gray-200 dark:bg-gray-900 px-5  py-5 sm:py-10 flex flex-col gap-5 sm:gap-10 text-center rounded-md mt-7"
             >
               <div className="flex justify-center">
                 <img
@@ -63,8 +63,8 @@ const Testimonial = () => {
                 <FaStar />
                 <FaStar />
               </div>
-              <p>{item.text}</p>
-              <h1 className="font-semibold ">{item.name}</h1>
+              <p className="text-lg">{item.text}</p>
+              <h1 className="font-semibold text-lg">{item.name}</h1>
             </div>
           ))}
         </div>
