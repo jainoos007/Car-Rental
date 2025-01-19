@@ -40,7 +40,7 @@ const Cards = () => {
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-4xl font-bold font-serif "
+          className="text-3xl sm:text-4xl font-bold font-serif "
         >
           Lorem ipsum dolor.
         </h1>
@@ -48,7 +48,7 @@ const Cards = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         {/* Cards */}
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid sm:grid-cols-3 gap-16">
           {carItems.map((item) => (
             <div
               data-aos="fade-up"
