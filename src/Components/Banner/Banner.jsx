@@ -8,20 +8,19 @@ const Banner = () => {
     backgroundImage: `url(${bannerImg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
   };
   return (
     <div>
       <div className="container">
         <div
-          className="rounded-xl flex flex-col justify-center items-center gap-5"
+          className="rounded-xl flex flex-col justify-center items-center gap-5 h-[300px] sm:h-[400px]"
           style={styleImg}
         >
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="100"
-            className="font-serif font-bold text-4xl"
+            className="font-serif font-bold text-2xl sm:text-4xl"
           >
             Get Started with our app
           </h1>
@@ -29,7 +28,7 @@ const Banner = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
-            className="text-center px-40"
+            className="text-center px-5 sm:px-40"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, iure
             enim dolorum fugit esse reiciendis!
@@ -43,12 +42,12 @@ const Banner = () => {
             <img
               src={img2}
               alt=""
-              className="h-[70px] w-[200px] cursor-pointer"
+              className=" h-[60px] sm:h-[70px] w-[190px] sm:w-[200px] cursor-pointer"
             />
             <img
               src={img1}
               alt=""
-              className="h-[70px] w-[200px] cursor-pointer"
+              className="h-[60px] sm:h-[70px] w-[190px] sm:w-[200px] cursor-pointer"
             />
           </div>
         </div>
