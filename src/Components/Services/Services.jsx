@@ -34,22 +34,24 @@ const Services = () => {
   return (
     <div className="dark:bg-black dark:text-white">
       <div className="container text-center py-14">
-        <h1 className="font-bold font-serif text-4xl">Why Choose Us</h1>
+        <h1 className="font-bold font-serif text-4xl sm:text-5xl">
+          Why Choose Us
+        </h1>
         {/* cards */}
-        <div className="grid grid-cols-3 gap-5 py-10 text-white ">
+        <div className="grid sm:grid-cols-3 gap-5 py-10 text-white ">
           {cardItems.map((item) => (
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={item.delay}
               key={item.id}
-              className="dark:bg-gray-900 group bg-black flex flex-col px-10 gap-5 py-12 items-center rounded-md hover:bg-primary dark:hover:bg-primary  hover:text-black duration-300"
+              className="dark:bg-gray-900 group bg-black flex flex-col px-5 gap-5 py-5 sm:py-12 items-center rounded-md hover:bg-primary/70 dark:hover:bg-primary  hover:text-black duration-300"
             >
               <div className="text-primary group-hover:text-black text-6xl ">
                 {item.icon}
               </div>
-              <h2>{item.text}</h2>
-              <p>{item.detail}</p>
+              <h2 className="text-lg">{item.text}</h2>
+              <p className="text-lg">{item.detail}</p>
             </div>
           ))}
         </div>

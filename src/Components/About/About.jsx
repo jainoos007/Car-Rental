@@ -14,12 +14,12 @@ const About = () => {
           <img src={bannerCar} alt="car" className="scale-75 max-h-[400px]" />
         </div>
         {/* text section */}
-        <div className="flex flex-col gap-6 ml-16 mr-16 justify-center ">
+        <div className="flex flex-col gap-6 sm:ml-16 sm:mr-16 justify-center ">
           <h1
             data-aos="fade-up"
             data-aos-direction="2000"
             data-aos-delay="100"
-            className="font-bold text-5xl font-serif"
+            className="font-bold text-4xl sm:text-5xl font-serif"
           >
             About us
           </h1>
