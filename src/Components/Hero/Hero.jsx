@@ -4,11 +4,11 @@ import blackCar from "../../assets/car.png";
 
 const Hero = ({ theme }) => {
   return (
-    <div className="dark:bg-black dark:text-white duration-300">
+    <div className="dark:bg-black dark:text-white duration-300 mb-1">
       <div className="container flex min-h-[620px]">
-        <div className="grid place-items-center grid-cols-2">
+        <div className="grid place-items-center sm:grid-cols-2">
           {/*text area  */}
-          <div className="flex flex-col gap-5 justify-center sm:pr-32 lg:pr-10">
+          <div className="order-2 sm:order-2 flex flex-col gap-5 justify-center sm:pr-32 lg:pr-10">
             <p
               data-aos="fade-up"
               data-aos-duration="2000"
@@ -45,7 +45,7 @@ const Hero = ({ theme }) => {
             data-aos="zoom-in"
             data-aos-duration="2500"
             data-aos-once="true"
-            className="relative"
+            className="relative order-1 sm:order-2"
           >
             <img
               src={theme === "dark" ? blackCar : yellowCar}
