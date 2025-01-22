@@ -2,7 +2,6 @@ import React from "react";
 import yellowCar from "../../assets/banner-car.png";
 import blackCar from "../../assets/car.png";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import About from "../About/About";
 
 const Hero = ({ theme }) => {
   return (
@@ -37,21 +36,15 @@ const Hero = ({ theme }) => {
               beatae nam similique nobis praesentium.
             </p>
             <div>
-              <BrowserRouter>
-                <Link to="/about">
-                  <button
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="400"
-                    className="bg-primary/70 px-5 py-2 rounded-md hover:bg-primary/80 text-lg"
-                  >
-                    Get Started
-                  </button>
-                </Link>
-                <Routes>
-                  <Route path="/about" element={<About />} />
-                </Routes>
-              </BrowserRouter>
+              <BrowserRouter></BrowserRouter>
+              <button
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="400"
+                className="bg-primary/70 px-5 py-2 rounded-md hover:bg-primary/80 text-lg"
+              >
+                Get Started
+              </button>
             </div>
           </div>
           {/* image area */}
