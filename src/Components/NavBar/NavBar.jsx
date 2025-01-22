@@ -1,9 +1,8 @@
 import React from "react";
 import DarkMode from "./DarkMode";
-import SlideNav from "./SlideNav";
 
 const NavBar = ({ theme, setTheme }) => {
-  export const Navlinks = [
+  const Navlinks = [
     {
       id: 1,
       name: "HOME",
@@ -33,32 +32,17 @@ const NavBar = ({ theme, setTheme }) => {
           <p className=" font-serif font-bold text-4xl">Car Rental</p>
         </div>
         <div className="sm:flex sm:gap-5">
-          <div className="hidden sm:flex sm:gap-5">
-            <a
-              href="#/Home"
-              className="font-semibold text-xl hover:text-primary hover:underline-offset-8 hover:underline transition-all duration-400"
-            >
-              HOME
-            </a>
-            <a
-              href="#/Home"
-              className="font-semibold text-xl hover:text-primary hover:underline-offset-8 hover:underline transition-all duration-400"
-            >
-              CARS
-            </a>
-            <a
-              href="#/Home"
-              className="font-semibold text-xl hover:text-primary hover:underline-offset-8 hover:underline transition-all duration-400"
-            >
-              ABOUT
-            </a>
-            <a
-              href="#/Home"
-              className="font-semibold text-xl hover:text-primary hover:underline-offset-8 hover:underline transition-all duration-400"
-            >
-              BOOKING
-            </a>
-          </div>
+          {Navlinks.map((item) => (
+            <div key={item.id} className="hidden sm:flex sm:gap-5">
+              <a
+                href={item.link}
+                className="font-semibold text-xl hover:text-primary hover:underline-offset-8 hover:underline transition-all duration-400"
+              >
+                {item.name}
+              </a>
+            </div>
+          ))}
+
           <div>
             <DarkMode theme={theme} setTheme={setTheme} />
           </div>
